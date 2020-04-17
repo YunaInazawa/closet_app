@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/show/1', function () {
+    return view('show');
+});
+Route::get('/coor/1', function () {
+    return view('coor');
+});
+
+Route::get('/new_clothes', function () {
+    return view('new_clothes');
+});
+Route::get('/new_coor', function () {
+    return view('new_coor');
+});
+
+Route::get('/edit_clothes/1', function () {
+    return view('edit_clothes');
+});
+Route::get('/edit_coor/1', function () {
+    return view('edit_coor');
 });
