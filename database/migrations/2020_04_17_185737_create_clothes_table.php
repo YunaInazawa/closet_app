@@ -20,6 +20,7 @@ class CreateClothesTable extends Migration
             $table->unsignedinteger('genre_id');
             $table->integer('price')->nullable();
             $table->text('memo')->nullable();
+            $table->string('image_path');
             $table->timestamps();
             $table->softDeletes();
 
